@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Marola Gay_0: -8191277370114001110
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
