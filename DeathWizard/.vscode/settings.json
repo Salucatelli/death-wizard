@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Youtube Tutorial.sln"
+    "dotnet.defaultSolution": "DeathWizard.sln"
 }

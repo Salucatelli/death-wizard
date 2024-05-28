@@ -13,11 +13,11 @@ public class ItemCollectior : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Cherry"))
-        {
-            Destroy(collision.gameObject);
-            cherries++;
-            cherriesText.text = "Cherries: " + cherries;
-        }
+        // if (collision.gameObject.CompareTag("Cherry"))
+        // {
+        //     Destroy(collision.gameObject);
+        //     cherries++;
+        //     cherriesText.text = "Cherries: " + cherries;
+        // }
     }
 }

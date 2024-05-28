@@ -66,6 +66,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void UpdateAnimationState()
     {
+        if(rb.bodyType != RigidbodyType2D.Static)
+        {
         if (dirX > 0f)
         {
             if (forcaDoTiro < 0)
@@ -119,6 +121,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         anim.SetInteger("state", (int)state);
+        }
     }
 
     private bool IsGrounded()
