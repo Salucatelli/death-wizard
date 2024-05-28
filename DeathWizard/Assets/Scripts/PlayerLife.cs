@@ -19,6 +19,14 @@ public class PlayerLife : MonoBehaviour
         lifeText.text = "Vidas: " + playerLife;
     }
 
+    void Update()
+    {
+        if (transform.position.y < -5)
+        {
+            Die();
+        }
+    }
+
     private void OnCollisionEnter2D(Collision2D colision)
     {
         if (colision.gameObject.CompareTag("Trap"))
