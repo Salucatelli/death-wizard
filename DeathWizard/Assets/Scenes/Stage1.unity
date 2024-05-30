@@ -11710,11 +11710,11 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1574585962}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -11763,6 +11763,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c132396cd979af4d8aafb394d2ff303, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EnemyName: Gargula
 --- !u!1 &1820793038
 GameObject:
   m_ObjectHideFlags: 0
@@ -11962,6 +11963,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c132396cd979af4d8aafb394d2ff303, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EnemyName: Zombi
 --- !u!114 &1820793045
 MonoBehaviour:
   m_ObjectHideFlags: 0

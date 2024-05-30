@@ -41,9 +41,12 @@ public class PlayerLife : MonoBehaviour
     {
         if (collider.gameObject.CompareTag("Cherry"))
         {
-            playerLife++;
+            if (playerLife < 3)
+            {
+                playerLife++;
+                lifeText.text = "Vidas: " + playerLife;
+            }
             Destroy(collider.gameObject);
-            lifeText.text = "Vidas: " + playerLife;
         }
     }
 

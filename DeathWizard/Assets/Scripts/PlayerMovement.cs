@@ -66,61 +66,61 @@ public class PlayerMovement : MonoBehaviour
 
     private void UpdateAnimationState()
     {
-        if(rb.bodyType != RigidbodyType2D.Static)
+        if (rb.bodyType != RigidbodyType2D.Static)
         {
-        if (dirX > 0f)
-        {
-            if (forcaDoTiro < 0)
+            if (dirX > 0f)
             {
-                forcaDoTiro *= -1;
+                if (forcaDoTiro < 0)
+                {
+                    forcaDoTiro *= -1;
+                }
+                state = MovementState.running;
+                sprite.flipX = false;
+                if (attackObject.localPosition.x < 0)
+                {
+                    attackObject.localPosition = new Vector2(attackObject.localPosition.x * -1, attackObject.localPosition.y);
+                }
+                //Flip(0, false);
             }
-            state = MovementState.running;
-            sprite.flipX = false;
-            if (attackObject.localPosition.x < 0)
+            else if (dirX < 0f)
             {
-                attackObject.localPosition = new Vector2(attackObject.localPosition.x * -1, attackObject.localPosition.y);
+                if (forcaDoTiro > 0)
+                {
+                    forcaDoTiro *= -1;
+                }
+                state = MovementState.running;
+                sprite.flipX = true;
+                if (attackObject.localPosition.x > 0)
+                {
+                    attackObject.localPosition = new Vector2(-attackObject.localPosition.x, attackObject.localPosition.y);
+                }
+                //Flip(1, true);
             }
-            //Flip(0, false);
-        }
-        else if (dirX < 0f)
-        {
-            if (forcaDoTiro > 0)
+            else
             {
-                forcaDoTiro *= -1;
+                state = MovementState.idle;
             }
-            state = MovementState.running;
-            sprite.flipX = true;
-            if (attackObject.localPosition.x > 0)
+            //------------------------------
+            if (rb.velocityY > .1f)
             {
-                attackObject.localPosition = new Vector2(-attackObject.localPosition.x, attackObject.localPosition.y);
+                state = MovementState.jumping;
             }
-            //Flip(1, true);
-        }
-        else
-        {
-            state = MovementState.idle;
-        }
-        //------------------------------
-        if (rb.velocityY > .1f)
-        {
-            state = MovementState.jumping;
-        }
-        else if (rb.velocityY < -.1f)
-        {
-            state = MovementState.falling;
-        }
-        if (Input.GetMouseButton(1))
-        {
-            state = MovementState.aiming;
-        }
+            else if (rb.velocityY < -.1f)
+            {
+                state = MovementState.falling;
+            }
+            if (Input.GetMouseButton(1))
+            {
+                state = MovementState.aiming;
+            }
 
-        //--------------------------------
-        if (Input.GetButtonDown("Fire1") && state == MovementState.idle)
-        {
-            anim.SetTrigger("Attack");
-        }
+            //--------------------------------
+            if (Input.GetButtonDown("Fire1") && state == MovementState.idle)
+            {
+                anim.SetTrigger("Attack");
+            }
 
-        anim.SetInteger("state", (int)state);
+            anim.SetInteger("state", (int)state);
         }
     }
 

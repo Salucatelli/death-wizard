@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public string EnemyName;
+
     private Rigidbody2D rb;
+    private Animator anim;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -26,7 +30,8 @@ public class Enemy : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("Melee"))
         {
-            Destroy(this.gameObject);
+            //Destroy(this.gameObject);
+            anim.SetTrigger(EnemyName + "Die");
         }
     }
 
@@ -36,5 +41,10 @@ public class Enemy : MonoBehaviour
         {
             rb.bodyType = RigidbodyType2D.Static;
         }
+    }
+
+    private void Die()
+    {
+        Destroy(this.gameObject);
     }
 }
