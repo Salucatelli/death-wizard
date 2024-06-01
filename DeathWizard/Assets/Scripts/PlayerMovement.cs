@@ -23,7 +23,6 @@ public class PlayerMovement : MonoBehaviour
     private float jumpSpeed = 14f;
     private float runSpeed = 9f;
     [SerializeField] private LayerMask jumpableGround;
-    private bool flipX = false; //flip do personagem
 
 
     private Rigidbody2D rb;
@@ -49,7 +48,10 @@ public class PlayerMovement : MonoBehaviour
 
         dirX = Input.GetAxisRaw("Horizontal");
 
-        rb.velocity = new Vector2(dirX * runSpeed, rb.velocityY);
+        if (rb.bodyType != RigidbodyType2D.Static)
+        {
+            rb.velocity = new Vector2(dirX * runSpeed, rb.velocityY);
+        }
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {

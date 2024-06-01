@@ -31,7 +31,7 @@ public class Enemy : MonoBehaviour
         if (collision.gameObject.CompareTag("Melee"))
         {
             //Destroy(this.gameObject);
-            anim.SetTrigger(EnemyName + "Die");
+            anim.SetTrigger("Die");
         }
     }
 

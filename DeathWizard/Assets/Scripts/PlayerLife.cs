@@ -24,6 +24,7 @@ public class PlayerLife : MonoBehaviour
         if (transform.position.y < -5)
         {
             Die();
+            RestartLevel();
         }
     }
 
