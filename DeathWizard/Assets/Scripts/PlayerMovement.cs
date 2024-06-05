@@ -18,7 +18,6 @@ public class PlayerMovement : MonoBehaviour
     [Header("Melle Atack Variable")]
     public Transform attackObject;
     public float attackRange;
-    private bool isAttacking = false;
 
     //player
     private float jumpSpeed = 14f;
@@ -117,19 +116,11 @@ public class PlayerMovement : MonoBehaviour
                 state = MovementState.aiming;
             }
 
-<<<<<<< Updated upstream:DeathWizard/Assets/Scripts/PlayerMovement.cs
             //--------------------------------
             if (Input.GetButtonDown("Fire1") && state == MovementState.idle)
             {
                 anim.SetTrigger("Attack");
             }
-=======
-        //--------------------------------
-        if (Input.GetButtonDown("Fire1") && state == MovementState.idle && !isAttacking)
-        {
-            anim.SetTrigger("Attack");
-        }
->>>>>>> Stashed changes:Youtube Tutorial/Assets/Scripts/PlayerMovement.cs
 
             anim.SetInteger("state", (int)state);
         }
@@ -177,7 +168,6 @@ public class PlayerMovement : MonoBehaviour
     private void AttackStart()
     {
         attackCol.enabled = true;
-        isAttacking = true;
     }
 
 
@@ -185,7 +175,6 @@ public class PlayerMovement : MonoBehaviour
     private void AttackEnd()
     {
         attackCol.enabled = false;
-        isAttacking = false;
     }
 }
 
