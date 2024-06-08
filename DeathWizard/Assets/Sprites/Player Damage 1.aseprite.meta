@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a40c6936641ee484d86103333e0247f3
+guid: 7f74391d7e2e79f4fb685d9df47b86ca
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -35,7 +35,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 100
+    spritePixelsToUnits: 16
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -97,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 0
+  platformSettingsDirtyTick: 638534541604799506
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,18 +121,38 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Player Damage_Frame_0
+  - name: Player Damage 1_Frame_0
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
+      x: 35
+      y: 40
+      width: 14
+      height: 28
+    spriteID: 68b3f642c83d1b04ab0c49303cdf01f2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 35, y: 40}
+  - name: Player Damage 1_Frame_1
+    originalName: 
+    pivot: {x: 0.6956522, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
       x: 4
       y: 4
-      width: 32
-      height: 32
-    spriteID: 78fa84e60875582498cd8830b941a449
+      width: 23
+      height: 28
+    spriteID: 0552c9b10c6ea41478c6a57664e7ea1d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -141,18 +161,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Player Damage_Frame_1
+  - name: Player Damage 1_Frame_2
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.65000004, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 44
-      width: 32
-      height: 32
-    spriteID: eb1092ece49edb24c834c123c5ff2579
+      y: 40
+      width: 20
+      height: 28
+    spriteID: 38780bf5d763dc040870e51cb93547a0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -160,39 +180,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 44}
-  - name: Player Damage_Frame_2
+    uvTransform: {x: 4, y: 40}
+  - name: Player Damage 1_Frame_4
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.6111111, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 84
-      width: 32
-      height: 32
-    spriteID: 396c16d270fe78343a56aca5818b1b28
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 84}
-  - name: Player Damage_Frame_3
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 44
+      x: 35
       y: 4
-      width: 32
-      height: 32
-    spriteID: 413b109667e5548468af8ee039b1e725
+      width: 18
+      height: 28
+    spriteID: d832261cd1b8868418bdda51035edb2b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -200,19 +200,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 44, y: 4}
-  - name: Player Damage_Frame_4
+    uvTransform: {x: 35, y: 4}
+  - name: Player Damage 1_Frame_3
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.6315789, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 44
-      y: 44
-      width: 32
-      height: 32
-    spriteID: 541506188badfb044b3ff00675611ed7
+      x: 4
+      y: 76
+      width: 19
+      height: 28
+    spriteID: f70baef2311eb1b498f7011342cee779
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -220,19 +220,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 44, y: 44}
-  - name: Player Damage_Frame_5
+    uvTransform: {x: 4, y: 76}
+  - name: Player Damage 1_Frame_5
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.72727275, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 44
-      y: 84
-      width: 32
+      x: 35
+      y: 76
+      width: 11
       height: 32
-    spriteID: 47b40cc61ae3dad4ba7d65f1a79f5c73
+    spriteID: 6ba1e6de6fbf20b41a0f24cc8ff4e0aa
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -240,67 +240,91 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 44, y: 84}
+    uvTransform: {x: 35, y: 76}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -573783312
-    name: Player Damage
+    guid: -513127379
+    name: Player Damage 1
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Player Damage_Frame_0
+    - name: Player Damage 1_Frame_0
       frameIndex: 0
       cellRect:
-        x: 0
+        x: 9
         y: 0
-        width: 32
-        height: 32
-      spriteId: 78fa84e60875582498cd8830b941a449
-    - name: Player Damage_Frame_1
+        width: 14
+        height: 28
+      spriteId: 68b3f642c83d1b04ab0c49303cdf01f2
+    - name: Player Damage 1_Frame_1
       frameIndex: 1
       cellRect:
         x: 0
         y: 0
-        width: 32
-        height: 32
-      spriteId: eb1092ece49edb24c834c123c5ff2579
-    - name: Player Damage_Frame_2
+        width: 23
+        height: 28
+      spriteId: 0552c9b10c6ea41478c6a57664e7ea1d
+    - name: Player Damage 1_Frame_2
       frameIndex: 2
       cellRect:
-        x: 0
+        x: 3
         y: 0
-        width: 32
-        height: 32
-      spriteId: 396c16d270fe78343a56aca5818b1b28
-    - name: Player Damage_Frame_3
-      frameIndex: 3
-      cellRect:
-        x: 0
-        y: 0
-        width: 32
-        height: 32
-      spriteId: 413b109667e5548468af8ee039b1e725
-    - name: Player Damage_Frame_4
+        width: 20
+        height: 28
+      spriteId: 38780bf5d763dc040870e51cb93547a0
+    - name: Player Damage 1_Frame_4
       frameIndex: 4
       cellRect:
-        x: 0
+        x: 5
         y: 0
-        width: 32
-        height: 32
-      spriteId: 541506188badfb044b3ff00675611ed7
-    - name: Player Damage_Frame_5
+        width: 18
+        height: 28
+      spriteId: d832261cd1b8868418bdda51035edb2b
+    - name: Player Damage 1_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 4
+        y: 0
+        width: 19
+        height: 28
+      spriteId: f70baef2311eb1b498f7011342cee779
+    - name: Player Damage 1_Frame_5
       frameIndex: 5
       cellRect:
-        x: 0
+        x: 8
         y: 0
-        width: 32
+        width: 11
         height: 32
-      spriteId: 47b40cc61ae3dad4ba7d65f1a79f5c73
+      spriteId: 6ba1e6de6fbf20b41a0f24cc8ff4e0aa
     linkedCells: []
     parentIndex: -1
-  platformSettings: []
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 

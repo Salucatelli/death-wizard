@@ -9,6 +9,7 @@ public class PlayerLife : MonoBehaviour
     public static int playerLife;
     private Animator anim;
     private Rigidbody2D rb;
+    private bool isHitting = false;
 
     public Text lifeText;
 
@@ -35,7 +36,11 @@ public class PlayerLife : MonoBehaviour
     {
         if (colision.gameObject.CompareTag("Trap"))
         {
-            Hit();
+            if (!isHitting)
+            {
+                Hit();
+            }
+
             lifeText.text = "Vidas: " + playerLife;
         }
     }
@@ -56,10 +61,14 @@ public class PlayerLife : MonoBehaviour
     private void Hit()
     {
         playerLife--;
-        //Animação de bit futuramente
         if (playerLife == 0)
         {
             Die();
+        }
+        else
+        {
+            anim.SetTrigger("PlayerHit");
+            isHitting = true;
         }
     }
 
@@ -72,5 +81,10 @@ public class PlayerLife : MonoBehaviour
     private void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void stopHitting()
+    {
+        isHitting = false;
     }
 }

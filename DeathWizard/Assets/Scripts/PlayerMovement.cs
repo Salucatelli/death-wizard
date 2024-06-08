@@ -129,28 +129,6 @@ public class PlayerMovement : MonoBehaviour
         return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
     }
 
-    // private void Flip(int n, bool flip)
-    // {
-    //     sprite.flipX = flip;
-    //     //attackObject.localPosition = new Vector2(attackObject.localPosition.x * n, attackObject.localPosition.y);
-
-    //     if (n == 0)
-    //     {
-    //         if (attackObject.localPosition.x < 0)
-    //         {
-    //             attackObject.localPosition = new Vector2(attackObject.localPosition.x, attackObject.localPosition.y);
-    //         }
-    //     }
-    //     else
-    //     {
-    //         if (attackObject.localPosition.x > 0)
-    //         {
-    //             attackObject.localPosition = new Vector2(-attackObject.localPosition.x, attackObject.localPosition.y);
-    //         }
-    //     }
-
-    // }
-
     private void Atirar()
     {
         if (tiro == true)
