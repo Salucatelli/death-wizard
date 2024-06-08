@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 54f312203c054564d8b5f45b390ca4e5
+guid: a40c6936641ee484d86103333e0247f3
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,18 +121,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: ProtParado
+  - name: Player Damage_Frame_0
     originalName: 
-    pivot: {x: 0.26666668, y: 0.5}
+    pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 30
-      height: 64
-    spriteID: acfa049c18037844a9aa924b1e90389c
+      width: 32
+      height: 32
+    spriteID: 78fa84e60875582498cd8830b941a449
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -141,23 +141,163 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
+  - name: Player Damage_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 44
+      width: 32
+      height: 32
+    spriteID: eb1092ece49edb24c834c123c5ff2579
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 44}
+  - name: Player Damage_Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 84
+      width: 32
+      height: 32
+    spriteID: 396c16d270fe78343a56aca5818b1b28
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 84}
+  - name: Player Damage_Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 4
+      width: 32
+      height: 32
+    spriteID: 413b109667e5548468af8ee039b1e725
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 4}
+  - name: Player Damage_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 44
+      width: 32
+      height: 32
+    spriteID: 541506188badfb044b3ff00675611ed7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 44}
+  - name: Player Damage_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 84
+      width: 32
+      height: 32
+    spriteID: 47b40cc61ae3dad4ba7d65f1a79f5c73
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 84}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1891533512
-    name: ProtParado
+    guid: -573783312
+    name: Player Damage
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: ProtParado
+    - name: Player Damage_Frame_0
       frameIndex: 0
       cellRect:
-        x: 8
-        y: -32
-        width: 30
-        height: 64
-      spriteId: acfa049c18037844a9aa924b1e90389c
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      spriteId: 78fa84e60875582498cd8830b941a449
+    - name: Player Damage_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      spriteId: eb1092ece49edb24c834c123c5ff2579
+    - name: Player Damage_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      spriteId: 396c16d270fe78343a56aca5818b1b28
+    - name: Player Damage_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      spriteId: 413b109667e5548468af8ee039b1e725
+    - name: Player Damage_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      spriteId: 541506188badfb044b3ff00675611ed7
+    - name: Player Damage_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      spriteId: 47b40cc61ae3dad4ba7d65f1a79f5c73
     linkedCells: []
     parentIndex: -1
   platformSettings: []

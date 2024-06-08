@@ -6,14 +6,17 @@ using UnityEngine.UI;
 
 public class PlayerLife : MonoBehaviour
 {
-    public static int playerLife = 3;
+    public static int playerLife;
     private Animator anim;
     private Rigidbody2D rb;
 
     public Text lifeText;
 
+    public List<GameObject> lifes;
+
     void Start()
     {
+        playerLife = 3;
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         lifeText.text = "Vidas: " + playerLife;
@@ -21,7 +24,7 @@ public class PlayerLife : MonoBehaviour
 
     void Update()
     {
-        if (transform.position.y < -5)
+        if (transform.position.y < -7)
         {
             Die();
             RestartLevel();
@@ -35,7 +38,6 @@ public class PlayerLife : MonoBehaviour
             Hit();
             lifeText.text = "Vidas: " + playerLife;
         }
-
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
