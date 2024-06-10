@@ -11,8 +11,8 @@ public class PlayerMovement : MonoBehaviour
     [Header("Gun")]
     public GameObject balaProjetil; //projetil
     public Transform player; //posição da arma
-    public float forcaDoTiro; //velocidade da bala
-    private bool tiro; //input do tiro
+    //public float forcaDoTiro; //velocidade da bala
+    //private bool tiro; //input do tiro
 
     //Melee attack
     [Header("Melle Atack Variable")]
@@ -71,28 +71,32 @@ public class PlayerMovement : MonoBehaviour
         {
             if (dirX > 0f)
             {
-                if (forcaDoTiro < 0)
-                {
-                    forcaDoTiro *= -1;
-                }
+                // if (forcaDoTiro < 0)
+                // {
+                //     forcaDoTiro *= -1;
+                // }
                 state = MovementState.running;
                 sprite.flipX = false;
+
+                //Attack Collider Flip
                 if (attackObject.localPosition.x < 0)
                 {
-                    attackObject.localPosition = new Vector2(attackObject.localPosition.x * -1, attackObject.localPosition.y);
+                    attackObject.localPosition = new Vector2((attackObject.localPosition.x + 0.8f) * -1, attackObject.localPosition.y);
                 }
             }
             else if (dirX < 0f)
             {
-                if (forcaDoTiro > 0)
-                {
-                    forcaDoTiro *= -1;
-                }
+                // if (forcaDoTiro > 0)
+                // {
+                //     forcaDoTiro *= -1;
+                // }
                 state = MovementState.running;
                 sprite.flipX = true;
+
+                //Attack Collider Flip
                 if (attackObject.localPosition.x > 0)
                 {
-                    attackObject.localPosition = new Vector2(-attackObject.localPosition.x, attackObject.localPosition.y);
+                    attackObject.localPosition = new Vector2(-attackObject.localPosition.x - 0.8f, attackObject.localPosition.y);
                 }
             }
             else
@@ -129,28 +133,27 @@ public class PlayerMovement : MonoBehaviour
         return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
     }
 
-    private void Atirar()
-    {
-        if (tiro == true)
-        {
-            anim.SetTrigger("Shoot");
-            GameObject temp = Instantiate(balaProjetil);
-            temp.transform.position = new Vector2(player.position.x, player.position.y);
-            temp.GetComponent<Rigidbody2D>().velocity = new Vector2(forcaDoTiro, 0);
-            Destroy(temp.gameObject, 3f);
-        }
-    }
+    // private void Atirar()
+    // {
+    //     if (tiro == true)
+    //     {
+    //         anim.SetTrigger("Shoot");
+    //         GameObject temp = Instantiate(balaProjetil);
+    //         temp.transform.position = new Vector2(player.position.x, player.position.y);
+    //         temp.GetComponent<Rigidbody2D>().velocity = new Vector2(forcaDoTiro, 0);
+    //         Destroy(temp.gameObject, 3f);
+    //     }
+    // }
 
     private void AttackStart()
     {
         attackCol.enabled = true;
     }
 
-
-
     private void AttackEnd()
     {
         attackCol.enabled = false;
+
     }
 }
 
