@@ -37,8 +37,8 @@ public class PauseButtons : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    public void Menu()
+    public void Quit()
     {
-        SceneManager.LoadScene("Menu");
+        Application.Quit();
     }
 }

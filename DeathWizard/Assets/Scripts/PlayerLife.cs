@@ -38,10 +38,10 @@ public class PlayerLife : MonoBehaviour
         {
             if (!isHitting)
             {
+                playerLife--;
                 Hit();
+                lifeText.text = "Vidas: " + playerLife;
             }
-
-            lifeText.text = "Vidas: " + playerLife;
         }
     }
 
@@ -60,10 +60,11 @@ public class PlayerLife : MonoBehaviour
 
     private void Hit()
     {
-        playerLife--;
+
         if (playerLife == 0)
         {
             Die();
+            return;
         }
         else
         {

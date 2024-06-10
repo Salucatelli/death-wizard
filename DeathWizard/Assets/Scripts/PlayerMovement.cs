@@ -115,7 +115,7 @@ public class PlayerMovement : MonoBehaviour
             // }
 
             //--------------------------------
-            if (Input.GetButtonDown("Fire1") && state == MovementState.idle)
+            if (Input.GetButtonDown("Fire1") && state == MovementState.idle && Time.timeScale == 1)
             {
                 anim.SetTrigger("Attack");
             }
